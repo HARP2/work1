@@ -11,3 +11,6 @@
 .site-nav .link:hover, .site-nav .link:focus {
 color: rgb(95, 195, 235);
 }
+.site-nav .link.current {
+    color: rgb(95, 195, 235);
+}
