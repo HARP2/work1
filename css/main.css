@@ -1,8 +1,24 @@
 /* -----------------------------------основні налаштування-----------------------*/
 
 :root{
-    --header-color:black;
+    --header-color:#ffffff;
     --second-color:rgb(95, 195, 235);
+    --typical-margin: 20px;
+}
+.container {
+    width: 814px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;  
+}
+ul,oi{
+    margin: 0;
+}
+button{
+    cursor: pointer;
 }
 /* -----------------------------------приховує рядки-----------------------*/
 
@@ -19,6 +35,11 @@
     overflow: hidden;
 }
 /* -----------------------------------налаштування хедера-----------------------*/
+.header {
+    background-color:#278fd4;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .list {
 list-style: none;
 }
@@ -42,4 +63,9 @@ color: var(--second-color)
     color:var(--header-color)
 }
 /* -----------------------------------налаштування боді------------------------ */
+.text,title{
+    max-width: 400px; 
+    margin-top: var(--typical-margin)   
+}
+
 /* -----------------------------------налаштування футера-----------------------*/
