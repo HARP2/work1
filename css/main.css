@@ -12,9 +12,11 @@ html{
     --second-color:rgb(95, 195, 235);
     --typical-margin: 20px;
     --li-color: #969494;
+    --second-li-color:#c5bebe;
+    --mine-color:#3c78d8;
 }
 .container {
-    width: 814px;
+    width: 845px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -47,20 +49,35 @@ button{
 /* -----------------------------------налаштування хедера-----------------------*/
 .header {
     background-color:#278fd4;
-    padding-top: 32px;
-    padding-bottom: 32px;
+} 
+.logo{
+    margin-right: auto;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
 }
 .list {
 list-style: none;
 }
-.site-nav .link{
-    color:var(--header-color)
+.site-nav {
+ display: flex;
+}
+.site-nav .item + .item {
+    margin-left: 40px;
+}
+.site-nav .link {
+    color:var(--header-color);
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
 }
 .link:hover,
 .link:focus {
 color: var(--second-color)
 }
-.site-nav .link.current {
+.site-nav .link .current {
     color:var(--second-color)
 }
 .link{
@@ -77,10 +94,42 @@ color: var(--second-color)
     max-width: 400px; 
     margin-top: var(--typical-margin)   
 }
-.hero-title{
+.center-title{
     text-align: center;
 }
-.item:nth-child(2n) {
-background-color: var(--li-color)
+.center-text{
+    margin-right: auto;
+    margin-left: auto;
+}
+.text-padding{
+    padding: 20px;
+}
+.list-item:nth-child(2n) {
+background-color: var(--li-color);
+flex-direction: row-reverse;
+}
+.list-item:nth-child(2n+1){
+    background-color: var(--second-li-color);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.size{
+    width: 300px;
+}
+.list .list-item + .list-item{
+    margin-top: 30px;
+}
+.list > .list-item:nth-child(2n+1) .content{
+    margin-left: auto;
+    margin-right: auto;
+}
+.list > .list-item:nth-child(2n) .content{
+    margin-left: auto;
+    margin-right: auto;
+}
+.introduction{
+    background-color: var(--header-color);
 }
 /* -----------------------------------налаштування футера-----------------------*/
