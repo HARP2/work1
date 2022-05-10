@@ -78,7 +78,7 @@ list-style: none;
 color: var(--second-color)
 }
 .site-nav .link .current {
-    color:var(--second-color)
+    color:var(--second-color);
 }
 .link{
     text-decoration: none;
@@ -87,15 +87,19 @@ color: var(--second-color)
     letter-spacing: 0.1em;
 }
 .logo {
-    color:var(--header-color)
+    color:var(--header-color);
 }
 /* -----------------------------------налаштування боді------------------------ */
 .text,title{
     max-width: 400px; 
-    margin-top: var(--typical-margin)   
+    margin-top: var(--typical-margin);   
 }
 .center-title{
     text-align: center;
+}
+.margin{
+    margin-right: auto;
+    margin-left: auto;
 }
 .center-text{
     margin-right: auto;
